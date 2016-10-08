@@ -1,0 +1,1 @@
+char_target_moving=false
