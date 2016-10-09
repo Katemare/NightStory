@@ -12,8 +12,10 @@
       <sprite>sprites\player_standing_sprite</sprite>
     </sprites>
     <sprites name="BG_Objects">
-      <sprite>sprites\sprite1_graves</sprite>
       <sprite>sprites\sprite2_mountain_00</sprite>
+      <sprite>sprites\sprite7_angel_statue</sprite>
+      <sprite>sprites\sprite8_grave_01</sprite>
+      <sprite>sprites\sprite9_grave_02</sprite>
     </sprites>
     <sprites name="Gizmos">
       <sprite>sprites\Ground_sprite</sprite>
@@ -32,17 +34,25 @@
       <script>scripts\player_update.gml</script>
       <script>scripts\player_animation_end.gml</script>
       <script>scripts\player_init.gml</script>
+      <script>scripts\player_refresh.gml</script>
     </scripts>
     <scripts name="Camera">
       <script>scripts\camera_update.gml</script>
       <script>scripts\camera_init.gml</script>
       <script>scripts\camera_clamp_goal.gml</script>
       <script>scripts\camera_begin_draw.gml</script>
+      <script>scripts\camera_update_speed.gml</script>
     </scripts>
     <scripts name="BG">
       <script>scripts\BG_update.gml</script>
     </scripts>
+    <scripts name="Objects">
+      <script>scripts\focus_object_init.gml</script>
+    </scripts>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\FocusFont</font>
+  </fonts>
   <objects name="objects">
     <objects name="Player">
       <object>objects\Player</object>
@@ -58,6 +68,13 @@
     </objects>
     <objects name="Layout">
       <object>objects\Ground</object>
+    </objects>
+    <objects name="Objects">
+      <objects name="Graveyard">
+        <object>objects\AngelStatue</object>
+        <object>objects\Grave</object>
+      </objects>
+      <object>objects\FocusObject</object>
     </objects>
   </objects>
   <rooms name="rooms">

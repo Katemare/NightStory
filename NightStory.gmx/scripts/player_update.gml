@@ -26,4 +26,4 @@ else if char_moving then
     // update moving
     if abs(speed)<max_speed then speed+=accel_moving*char_dir
 }
-if char_moving then CameraManager.refresh=true
+if char_moving then player_refresh()

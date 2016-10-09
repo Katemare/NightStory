@@ -57,11 +57,14 @@
     <instance objName="Ground" x="115" y="333" name="inst_1CE5EA1A" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="45"/>
     <instance objName="Ground" x="544" y="288" name="inst_BEA31A8E" locked="0" code="" scaleX="3.46875" scaleY="1.0625" colour="4294967295" rotation="315"/>
     <instance objName="Player" x="290" y="288" name="inst_2DCE50D9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Mountain" x="319" y="353" name="inst_FAE0CC21" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Mountain" x="680" y="360" name="inst_CFAC0FBE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Mountain" x="319" y="353" name="inst_FAE0CC21" locked="-1" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Mountain" x="680" y="360" name="inst_CFAC0FBE" locked="-1" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Ground" x="992" y="320" name="inst_1C782729" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Ground" x="948" y="364" name="inst_6A7E6DBE" locked="0" code="" scaleX="1.96875" scaleY="0.612903237342834" colour="4294967295" rotation="45"/>
     <instance objName="CameraManager" x="77" y="61" name="inst_7C159C49" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="AngelStatue" x="352" y="288" name="inst_3127AB02" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Grave" x="405" y="288" name="inst_7B7507E0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Grave" x="447" y="288" name="inst_B98AF677" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="Dirt_tiles" x="128" y="288" w="32" h="32" xo="0" yo="0" id="10000001" name="inst_C2581553" depth="-1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
