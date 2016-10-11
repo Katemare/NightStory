@@ -43,7 +43,7 @@
           </argument>
           <argument>
             <kind>0</kind>
-            <string>"Gravestone"</string>
+            <string>"gravestone"</string>
           </argument>
         </arguments>
       </action>

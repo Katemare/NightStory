@@ -12,15 +12,26 @@
       <sprite>sprites\player_standing_sprite</sprite>
     </sprites>
     <sprites name="BG_Objects">
-      <sprite>sprites\sprite2_mountain_00</sprite>
-      <sprite>sprites\sprite7_angel_statue</sprite>
-      <sprite>sprites\sprite8_grave_01</sprite>
-      <sprite>sprites\sprite9_grave_02</sprite>
+      <sprites name="Graveyard">
+        <sprite>sprites\sprite7_angel_statue</sprite>
+        <sprite>sprites\sprite8_grave_01</sprite>
+        <sprite>sprites\sprite9_grave_02</sprite>
+      </sprites>
+      <sprites name="Trees">
+        <sprite>sprites\sprite9_tree_01</sprite>
+        <sprite>sprites\sprite10_tree_02</sprite>
+        <sprite>sprites\sprite11_tree_03</sprite>
+        <sprite>sprites\sprite12_tree_04</sprite>
+      </sprites>
+      <sprites name="Parallax">
+        <sprite>sprites\sprite2_mountain_00</sprite>
+      </sprites>
     </sprites>
     <sprites name="Gizmos">
       <sprite>sprites\Ground_sprite</sprite>
       <sprite>sprites\GoalGizmo_sprite</sprite>
     </sprites>
+    <sprite>sprites\sprite13_temp_logo</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\NightSky_BG</background>
@@ -49,9 +60,18 @@
     <scripts name="Objects">
       <script>scripts\focus_object_init.gml</script>
     </scripts>
+    <scripts name="UI">
+      <scripts name="Menu">
+        <script>scripts\menu_init.gml</script>
+        <script>scripts\menu_item_init.gml</script>
+        <script>scripts\menu_refresh_items.gml</script>
+        <script>scripts\menu_refresh_focus.gml</script>
+      </scripts>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\FocusFont</font>
+    <font>fonts\MenuFont</font>
   </fonts>
   <objects name="objects">
     <objects name="Player">
@@ -61,6 +81,12 @@
       <object>objects\BG_Manager</object>
       <object>objects\Parallax</object>
       <object>objects\Mountain</object>
+      <objects name="Trees">
+        <object>objects\Tree</object>
+        <object>objects\Tree_02</object>
+        <object>objects\Tree_03</object>
+        <object>objects\TreeStump</object>
+      </objects>
     </objects>
     <objects name="Camera">
       <object>objects\CameraManager</object>
@@ -69,15 +95,22 @@
     <objects name="Layout">
       <object>objects\Ground</object>
     </objects>
-    <objects name="Objects">
+    <objects name="FocusObjects">
       <objects name="Graveyard">
         <object>objects\AngelStatue</object>
         <object>objects\Grave</object>
+        <object>objects\Grave_02</object>
       </objects>
       <object>objects\FocusObject</object>
     </objects>
+    <objects name="UI">
+      <object>objects\Logo</object>
+      <object>objects\MenuItem</object>
+      <object>objects\Menu</object>
+    </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\TitleScreen</room>
     <room>rooms\TestRoom</room>
   </rooms>
   <constants number="6">
