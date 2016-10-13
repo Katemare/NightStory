@@ -14,6 +14,7 @@ var counter=0
 while ds_priority_size(sorted)>0
 {
     items[counter]=ds_priority_find_min(sorted)
+    items[counter].focus_index=counter
     counter++
     ds_priority_delete_min(sorted)
 }

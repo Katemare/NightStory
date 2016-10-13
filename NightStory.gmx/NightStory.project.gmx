@@ -30,6 +30,10 @@
     <sprites name="Gizmos">
       <sprite>sprites\Ground_sprite</sprite>
       <sprite>sprites\GoalGizmo_sprite</sprite>
+      <sprite>sprites\MenuItem_collision_sprite</sprite>
+    </sprites>
+    <sprites name="UI">
+      <sprite>sprites\MenuBullet_sprite</sprite>
     </sprites>
     <sprite>sprites\sprite13_temp_logo</sprite>
   </sprites>
@@ -66,6 +70,11 @@
         <script>scripts\menu_item_init.gml</script>
         <script>scripts\menu_refresh_items.gml</script>
         <script>scripts\menu_refresh_focus.gml</script>
+        <script>scripts\menu_item_focus.gml</script>
+        <script>scripts\menu_item_refresh.gml</script>
+        <script>scripts\menu_item_set_font.gml</script>
+        <script>scripts\menu_next.gml</script>
+        <script>scripts\menu_prev.gml</script>
       </scripts>
     </scripts>
   </scripts>
