@@ -1,5 +1,6 @@
 var action=argument0, key=argument1
 
+if not responsive then exit
 if on_cooldown and key=cooldown_key then exit
 
 on_cooldown=true

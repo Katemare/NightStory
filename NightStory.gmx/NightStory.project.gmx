@@ -92,7 +92,14 @@
         <script>scripts\main_menu_resolve.gml</script>
       </scripts>
     </scripts>
-    <script>scripts\LoadingManager_script.gml</script>
+    <scripts name="VFX">
+      <script>scripts\fade_out.gml</script>
+    </scripts>
+    <scripts name="flow">
+      <script>scripts\LoadingManager_script.gml</script>
+      <script>scripts\new_game.gml</script>
+      <script>scripts\quit.gml</script>
+    </scripts>
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\Focused_shader.shader</shader>
@@ -147,6 +154,9 @@
       <objects name="TitleScreen">
         <object>objects\MainMenu</object>
       </objects>
+    </objects>
+    <objects name="VFX">
+      <object>objects\FadeOut</object>
     </objects>
   </objects>
   <rooms name="rooms">

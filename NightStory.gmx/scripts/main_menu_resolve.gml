@@ -4,9 +4,10 @@ var slug=argument0
 switch slug
 {
 case 'new_game':
-    room_goto(TestRoom); // TEMP
+    fade_out(0, new_game)
     break;
 case 'exit':
-    game_end()
+    fade_out(0, quit)
     break;
 }
+responsive=false
