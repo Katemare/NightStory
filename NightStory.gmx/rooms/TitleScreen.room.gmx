@@ -56,6 +56,7 @@
     <instance objName="MenuItem" x="86" y="270" name="MenuItem_Woof" locked="0" code="title=&quot;Опции&quot;&#xA;slug=&quot;options&quot;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="MenuItem" x="86" y="293" name="inst_9FF185B1" locked="0" code="title=&quot;Титры&quot;&#xA;slug=&quot;credits&quot;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="MenuItem" x="85" y="314" name="inst_622EB959" locked="0" code="title=&quot;Выход&quot;&#xA;slug=&quot;exit&quot;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="MainMenu" x="10" y="9" name="inst_FD093E99" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

@@ -1,3 +1,7 @@
+// clean up
+if items_by_slug!=-1 then ds_map_destroy(items_by_slug)
+items=0
+
 // collect items, sort by order
 var me=id, sorted=ds_priority_create()
 with MenuItem
@@ -20,7 +24,6 @@ var counter=0, item_width
 while ds_priority_size(sorted)>0
 {
     items[counter]=ds_priority_find_min(sorted)
-    items[counter].focus_index=counter
     ds_map_add(items_by_slug, items[counter].slug, items[counter])
     ds_priority_delete_min(sorted)
     
@@ -39,7 +42,12 @@ menu_width+=extra_menu_width
 var i, l=array_length_1d(items)
 for (i=0; i<l; i++)
 {
-    with items[i] menu_item_refresh()
+    with items[i]
+    {
+        menu_item_reset()
+        focus_index=i
+        menu_item_refresh()
+    }
 }
 
 // focnus on first item

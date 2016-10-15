@@ -2,6 +2,9 @@
 <assets>
   <Configs name="configs">
     <Config>Configs\Default</Config>
+    <Config>Configs\Android</Config>
+    <Config>Configs\iOS</Config>
+    <Config>Configs\HTML5</Config>
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
@@ -75,16 +78,26 @@
         <script>scripts\menu_destroy.gml</script>
         <script>scripts\menu_action.gml</script>
         <script>scripts\menu_sync_to_focus.gml</script>
+        <script>scripts\menu_go.gml</script>
       </scripts>
       <scripts name="MenuItem">
         <script>scripts\menu_item_focus.gml</script>
         <script>scripts\menu_item_refresh.gml</script>
         <script>scripts\menu_item_init.gml</script>
+        <script>scripts\menu_item_reset.gml</script>
       </scripts>
       <script>scripts\label_set_font.gml</script>
+      <scripts name="MainMenu">
+        <script>scripts\main_menu_init.gml</script>
+        <script>scripts\main_menu_resolve.gml</script>
+      </scripts>
     </scripts>
     <script>scripts\LoadingManager_script.gml</script>
   </scripts>
+  <shaders name="shaders">
+    <shader type="GLSLES">shaders\Focused_shader.shader</shader>
+    <shader type="GLSLES">shaders\shader1.shader</shader>
+  </shaders>
   <fonts name="fonts">
     <font>fonts\FocusFont</font>
     <font>fonts\MenuFont</font>
