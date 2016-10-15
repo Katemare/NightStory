@@ -29,7 +29,7 @@
           </argument>
           <argument>
             <kind>0</kind>
-            <string>0.2</string>
+            <string>0.2*GAME_SPEED</string>
           </argument>
         </arguments>
       </action>
@@ -125,7 +125,7 @@
           </argument>
           <argument>
             <kind>0</kind>
-            <string>3</string>
+            <string>3*GAME_SPEED</string>
           </argument>
         </arguments>
       </action>
@@ -149,7 +149,7 @@
           </argument>
           <argument>
             <kind>0</kind>
-            <string>0.3</string>
+            <string>0.3*GAME_SPEED</string>
           </argument>
         </arguments>
       </action>
@@ -173,7 +173,7 @@
           </argument>
           <argument>
             <kind>0</kind>
-            <string>0.7</string>
+            <string>0.7*GAME_SPEED</string>
           </argument>
         </arguments>
       </action>

@@ -30,7 +30,9 @@
     <sprites name="Gizmos">
       <sprite>sprites\Ground_sprite</sprite>
       <sprite>sprites\GoalGizmo_sprite</sprite>
-      <sprite>sprites\MenuItem_collision_sprite</sprite>
+      <sprite>sprites\HeaderLabel_sprite</sprite>
+      <sprite>sprites\MenuLabel_sprite</sprite>
+      <sprite>sprites\NormalLabel_sprite</sprite>
     </sprites>
     <sprites name="UI">
       <sprite>sprites\MenuBullet_sprite</sprite>
@@ -67,20 +69,26 @@
     <scripts name="UI">
       <scripts name="Menu">
         <script>scripts\menu_init.gml</script>
-        <script>scripts\menu_item_init.gml</script>
         <script>scripts\menu_refresh_items.gml</script>
-        <script>scripts\menu_refresh_focus.gml</script>
-        <script>scripts\menu_item_focus.gml</script>
-        <script>scripts\menu_item_refresh.gml</script>
-        <script>scripts\menu_item_set_font.gml</script>
         <script>scripts\menu_next.gml</script>
         <script>scripts\menu_prev.gml</script>
+        <script>scripts\menu_destroy.gml</script>
+        <script>scripts\menu_action.gml</script>
+        <script>scripts\menu_sync_to_focus.gml</script>
       </scripts>
+      <scripts name="MenuItem">
+        <script>scripts\menu_item_focus.gml</script>
+        <script>scripts\menu_item_refresh.gml</script>
+        <script>scripts\menu_item_init.gml</script>
+      </scripts>
+      <script>scripts\label_set_font.gml</script>
     </scripts>
+    <script>scripts\LoadingManager_script.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\FocusFont</font>
     <font>fonts\MenuFont</font>
+    <font>fonts\HeaderFont</font>
   </fonts>
   <objects name="objects">
     <objects name="Player">
@@ -113,22 +121,34 @@
       <object>objects\FocusObject</object>
     </objects>
     <objects name="UI">
-      <object>objects\Logo</object>
-      <object>objects\MenuItem</object>
-      <object>objects\Menu</object>
+      <objects name="generic">
+        <object>objects\Logo</object>
+        <object>objects\Label</object>
+        <object>objects\Announcement</object>
+        <object>objects\Menu</object>
+        <object>objects\MenuItem</object>
+      </objects>
+      <objects name="LoadingScreen">
+        <object>objects\LoadingManager</object>
+      </objects>
+      <objects name="TitleScreen">
+        <object>objects\MainMenu</object>
+      </objects>
     </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\LoadingScreen</room>
     <room>rooms\TitleScreen</room>
     <room>rooms\TestRoom</room>
   </rooms>
-  <constants number="6">
+  <constants number="7">
     <constant name="DIR_RIGHT">1</constant>
     <constant name="DIR_LEFT">-1</constant>
     <constant name="TILESIZE">32</constant>
     <constant name="MAX_TILES_DROP">3</constant>
     <constant name="TILES_H">20</constant>
     <constant name="TILES_V">11</constant>
+    <constant name="GAME_SPEED">1</constant>
   </constants>
   <help>
     <rtf>help.rtf</rtf>

@@ -53,7 +53,7 @@
           </argument>
           <argument>
             <kind>0</kind>
-            <string>10</string>
+            <string>10*GAME_SPEED</string>
           </argument>
         </arguments>
       </action>
@@ -77,7 +77,7 @@
           </argument>
           <argument>
             <kind>0</kind>
-            <string>2</string>
+            <string>2*GAME_SPEED</string>
           </argument>
         </arguments>
       </action>
