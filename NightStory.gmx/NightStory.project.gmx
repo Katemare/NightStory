@@ -14,6 +14,16 @@
       <sprite>sprites\player_moving_sprite</sprite>
       <sprite>sprites\player_standing_sprite</sprite>
     </sprites>
+    <sprites name="Characters">
+      <sprite>sprites\sprite21_hiker</sprite>
+      <sprite>sprites\sprite22_mystery_man</sprite>
+      <sprite>sprites\sprite23_ranger</sprite>
+      <sprite>sprites\Smiley_standing_sprite</sprite>
+    </sprites>
+    <sprites name="Faces">
+      <sprite>sprites\TestFace_sprite</sprite>
+      <sprite>sprites\TestFace2_sprite</sprite>
+    </sprites>
     <sprites name="BG_Objects">
       <sprites name="Graveyard">
         <sprite>sprites\sprite7_angel_statue</sprite>
@@ -55,6 +65,14 @@
       <script>scripts\player_animation_end.gml</script>
       <script>scripts\player_init.gml</script>
       <script>scripts\player_refresh.gml</script>
+    </scripts>
+    <scripts name="Characters">
+      <script>scripts\character_init.gml</script>
+      <script>scripts\character_update.gml</script>
+      <scripts name="AI">
+        <script>scripts\TestAI.gml</script>
+        <script>scripts\TestAI_init.gml</script>
+      </scripts>
     </scripts>
     <scripts name="Camera">
       <script>scripts\camera_update.gml</script>
@@ -114,6 +132,11 @@
     <objects name="Player">
       <object>objects\Player</object>
     </objects>
+    <objects name="Characters">
+      <object>objects\Character</object>
+      <object>objects\AI_Character</object>
+      <object>objects\Smiley</object>
+    </objects>
     <objects name="Background">
       <object>objects\BG_Manager</object>
       <object>objects\Parallax</object>
@@ -147,6 +170,7 @@
         <object>objects\Announcement</object>
         <object>objects\Menu</object>
         <object>objects\MenuItem</object>
+        <object>objects\Sticker</object>
       </objects>
       <objects name="LoadingScreen">
         <object>objects\LoadingManager</object>
