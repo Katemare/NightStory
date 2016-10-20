@@ -19,6 +19,7 @@
       <sprite>sprites\sprite22_mystery_man</sprite>
       <sprite>sprites\sprite23_ranger</sprite>
       <sprite>sprites\Smiley_standing_sprite</sprite>
+      <sprite>sprites\Smiley_walking_sprite</sprite>
     </sprites>
     <sprites name="Faces">
       <sprite>sprites\TestFace_sprite</sprite>

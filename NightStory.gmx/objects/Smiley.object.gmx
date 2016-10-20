@@ -67,7 +67,7 @@
           </argument>
           <argument>
             <kind>0</kind>
-            <string>Smiley_standing_sprite</string>
+            <string>Smiley_walking_sprite</string>
           </argument>
         </arguments>
       </action>
@@ -115,7 +115,7 @@
           </argument>
           <argument>
             <kind>0</kind>
-            <string>2*GAME_SPEED</string>
+            <string>1*GAME_SPEED</string>
           </argument>
         </arguments>
       </action>
