@@ -65,6 +65,7 @@
       <script>scripts\player_animation_end.gml</script>
       <script>scripts\player_init.gml</script>
       <script>scripts\player_refresh.gml</script>
+      <script>scripts\player_update_focus.gml</script>
     </scripts>
     <scripts name="Characters">
       <script>scripts\character_init.gml</script>

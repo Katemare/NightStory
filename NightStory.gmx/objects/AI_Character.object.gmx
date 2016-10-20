@@ -63,11 +63,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>ai_init</string>
+            <string>ai_autorun</string>
           </argument>
           <argument>
             <kind>0</kind>
-            <string>false</string>
+            <string>0</string>
           </argument>
         </arguments>
       </action>
@@ -104,12 +104,10 @@
           <argument>
             <kind>1</kind>
             <string>/// call ai
-if not ai_init
+if ai_autorun&gt;0
 {
-    var init_script_name=script_get_name(ai)+'_init'
-    var init_script=asset_get_index(init_script_name)
-    if init_script!=-1 and script_exists(init_script) then script_execute(init_script)
-    ai_init=true
+    script_execute(ai_autorun)
+    ai_autorun=0
 }
 if ai!=0 then script_execute(ai)
 </string>
