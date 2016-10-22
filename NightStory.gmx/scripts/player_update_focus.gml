@@ -7,7 +7,7 @@ var nearest_distance=TILESIZE*TILES_H*2
 with FocusObject
 {
     if not focusable then continue
-    if moving_only and (not movable or (xprevious=x and yprevious=y)) then continue
+    if moving_only and not me.in_focus=id and (not movable or (xprevious=x and yprevious=y)) then continue
     if not place_meeting(x, y, Player) and sign(x-me.x)!=me.char_dir then continue
     var distance=distance_to_object(Player)
     if distance>nearest_distance then continue

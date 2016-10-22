@@ -67,6 +67,7 @@
       <script>scripts\player_init.gml</script>
       <script>scripts\player_refresh.gml</script>
       <script>scripts\player_update_focus.gml</script>
+      <script>scripts\player_update_focus_moving_only.gml</script>
     </scripts>
     <scripts name="Characters">
       <script>scripts\character_init.gml</script>
@@ -111,6 +112,14 @@
         <script>scripts\main_menu_init.gml</script>
         <script>scripts\main_menu_resolve.gml</script>
       </scripts>
+      <scripts name="Message">
+        <script>scripts\message_set.gml</script>
+        <script>scripts\message_prepare.gml</script>
+        <script>scripts\message_init.gml</script>
+        <script>scripts\message_print.gml</script>
+        <script>scripts\message_draw.gml</script>
+        <script>scripts\message_test.gml</script>
+      </scripts>
     </scripts>
     <scripts name="VFX">
       <script>scripts\fade_out.gml</script>
@@ -128,6 +137,7 @@
   <fonts name="fonts">
     <font>fonts\FocusFont</font>
     <font>fonts\MenuFont</font>
+    <font>fonts\MessageFont</font>
     <font>fonts\HeaderFont</font>
   </fonts>
   <objects name="objects">
@@ -173,6 +183,7 @@
         <object>objects\Menu</object>
         <object>objects\MenuItem</object>
         <object>objects\Sticker</object>
+        <object>objects\Message</object>
       </objects>
       <objects name="LoadingScreen">
         <object>objects\LoadingManager</object>
