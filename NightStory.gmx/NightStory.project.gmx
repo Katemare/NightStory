@@ -129,6 +129,12 @@
       <script>scripts\new_game.gml</script>
       <script>scripts\quit.gml</script>
     </scripts>
+    <scripts name="Controls">
+      <script>scripts\controls_key_press.gml</script>
+      <script>scripts\controls_key.gml</script>
+      <script>scripts\controls_key_release.gml</script>
+      <script>scripts\controls_convert_key.gml</script>
+    </scripts>
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\Focused_shader.shader</shader>
@@ -141,13 +147,16 @@
     <font>fonts\HeaderFont</font>
   </fonts>
   <objects name="objects">
-    <objects name="Player">
-      <object>objects\Player</object>
+    <objects name="Controls">
+      <object>objects\ControlManager</object>
     </objects>
     <objects name="Characters">
       <object>objects\Character</object>
       <object>objects\AI_Character</object>
       <object>objects\Smiley</object>
+    </objects>
+    <objects name="Player">
+      <object>objects\Player</object>
     </objects>
     <objects name="Background">
       <object>objects\BG_Manager</object>
@@ -195,13 +204,17 @@
     <objects name="VFX">
       <object>objects\FadeOut</object>
     </objects>
+    <objects name="Debug">
+      <object>objects\TestObject</object>
+      <object>objects\TestChildObject</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\LoadingScreen</room>
     <room>rooms\TitleScreen</room>
     <room>rooms\TestRoom</room>
   </rooms>
-  <constants number="7">
+  <constants number="9">
     <constant name="DIR_RIGHT">1</constant>
     <constant name="DIR_LEFT">-1</constant>
     <constant name="TILESIZE">32</constant>
@@ -209,6 +222,8 @@
     <constant name="TILES_H">20</constant>
     <constant name="TILES_V">11</constant>
     <constant name="GAME_SPEED">1</constant>
+    <constant name="GAME_WIDTH">640</constant>
+    <constant name="GAME_HEIGHT">360</constant>
   </constants>
   <help>
     <rtf>help.rtf</rtf>
